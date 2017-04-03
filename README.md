@@ -9,6 +9,12 @@ The example assume you're using InfluxDB as your database somewhere in your wifi
 Total estimated price (if you order all the stuff from AliExpress): $21,80 (SDS011) + $3 (WeMos D1 mini) + $1,8 (BMP085) = $26,6.
 
 ## Pinout connections
+### Warning - 5V vs 3.3V logic
+Most of ESP's work with 3.3V logic however SDS011 is 5V Rx/Tx device, which require at least 4.7 volt to work.
+
+However, in my case 3.3V logic didn't work so i got rid of my voltage divider. You won't find it in schematics below - it should be placed in front of D0 pin (Rx) of ESP.
+
+ALWAYS check maximum values accepted by your microcontroler. In my case it does work perfectly, but in your case it might simply cook your device.
 
 ## Known issues
 ### Deep sleep
