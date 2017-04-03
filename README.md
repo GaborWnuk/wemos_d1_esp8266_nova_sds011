@@ -6,6 +6,8 @@ This example shows possible implementation of Air Quality monitring device based
 
 The example assume you're using InfluxDB as your database somewhere in your wifi network and Grafana to display measurement data.
 
+Total estimated price (if you order all the stuff from AliExpress): $21,80 (SDS011) + $3 (WeMos D1 mini) + $1,8 (BMP085) = $26,6.
+
 ## Pinout connections
 
 ## Known issues
