@@ -1,6 +1,8 @@
 # WeMos D1 mini with Nova SDS011 air quality sensor and BMP085 barometric sensor
 Simple Air Quality measure device based on WeMOS D1 mini and Nova SDS011 air quality sensor
 
+![Photo](https://raw.githubusercontent.com/GaborWnuk/wemos_d1_esp8266_nova_sds011/master/IMG_1135.jpg)
+
 ## Description
 This example shows possible implementation of Air Quality monitring device based on ESP8266 (in this case - WeMos D1 mini) and SDS011 air quality sensor which in my opinion is one of the best for our purposes, has reasonable 8000 hours of constant running lifetime (1 year!) which this example extends to 15 - 20 years (because we're using device's sleep capability and running it only for few seconds every 5 minutes) and has reasonable accuracy for reasonable price ($25).
 
