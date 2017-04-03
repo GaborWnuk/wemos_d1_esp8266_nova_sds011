@@ -12,7 +12,7 @@ Total estimated price (if you order all the stuff from AliExpress): $21,80 (SDS0
 ### Warning - 5V vs 3.3V logic
 Most of ESP's work with 3.3V logic however SDS011 is 5V Rx/Tx device, which require at least 4.7 volt to work.
 
-However, in my case 3.3V logic didn't work so i got rid of my voltage divider. You won't find it in schematics below - it should be placed in front of D0 pin (Rx) of ESP.
+However, in my case 3.3V logic didn't work so i got rid of my voltage divider. It should be placed in front of D0 pin (Rx) of ESP.
 
 ALWAYS check maximum values accepted by your microcontroler. In my case it does work perfectly, but in your case it might simply cook your device.
 
