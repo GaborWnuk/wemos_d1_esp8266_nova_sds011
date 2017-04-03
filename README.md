@@ -26,7 +26,7 @@ To learn how to make a voltage divider - check out [Voltage Dividers](https://le
 
 ## Known issues
 ### Deep sleep
-WeMos - as any other ESP8266 device - gives you ability to enter deep sleep and basically minimize power usage to absolute minimum. However i've came across weird behaviour with SDS011 being constantly on, while ESP8266 was in deep sleep. And because i'd rather keep tear and wear of SDS011 down (rated 8000 hours of constant running) - this example doesn't use deep sleep of ESP at all.
+WeMos - as any other ESP8266 device - gives you ability to enter deep sleep and basically minimize power usage to absolute minimum. However i've come across weird behaviour with SDS011 being constantly on, while ESP8266 was in deep sleep. And because i'd rather keep tear and wear of SDS011 down (rated 8000 hours of constant running) - this example doesn't use deep sleep of ESP at all.
 
 ### Arduino IDE in favour of MicroPython
 I absolutely love MicroPython, however i needed Software Serial support on different pins than UART available through MicroPython (as only available UART is hardware one, which is used while you program your ESP, which renders it obsolete).
