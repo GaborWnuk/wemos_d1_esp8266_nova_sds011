@@ -20,7 +20,7 @@ To learn how to make a voltage divider - check out [Voltage Dividers](https://le
 
 ### Connecting
 
-
+![Breadboard](https://raw.githubusercontent.com/GaborWnuk/wemos_d1_esp8266_nova_sds011/master/001.jpg)
 
 ## Known issues
 ### Deep sleep
