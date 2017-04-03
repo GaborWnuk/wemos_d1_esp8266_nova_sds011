@@ -1,9 +1,19 @@
-# WeMOS D1 mini with Nova SDS011 air quality sensor and BMP085 barometric sensor
+# WeMos D1 mini with Nova SDS011 air quality sensor and BMP085 barometric sensor
 Simple Air Quality measure device based on WeMOS D1 mini and Nova SDS011 air quality sensor
+
+## Description
+This example shows possible implementation of Air Quality monitring device based on ESP8266 (in this case - WeMos D1 mini) and SDS011 air quality sensor which in my opinion is one of the best for our purposes, has reasonable 8000 hours of constant running lifetime (1 year!) which this example extends to 15 - 20 years (because we're using device's sleep capability and running it only for few seconds every 5 minutes) and has reasonable accuracy for reasonable price ($25).
+
+The example assume you're using InfluxDB as your database somewhere in your wifi network and Grafana to display measurement data.
 
 ## Pinout connections
 
 ## Known issues
+### Deep sleep
+WeMos - as any other ESP8266 device - gives you ability to enter deep sleep and basically minimize power usage to absolute minimum. However i've came across weird behaviour with SDS011 being constantly on, while ESP8266 was in deep sleep. And because i'd rather keep tear and wear of SDS011 down (rated 8000 hours of constant running) - this example doesn't use deep sleep of ESP at all.
+
+### Arduino IDE in favour of MicroPython
+I absolutely love MicroPython, however i needed Software Serial support on different pins than UART available through MicroPython (as only available UART is hardware one, which is used while you program your ESP, which renders it obsolete).
 
 # License
 MIT.
