@@ -8,13 +8,13 @@
 // Time to sleep (in seconds):
 const int sleepTime = 60 * 1;
 
-const char* ssid = "XXXXXXX";
-const char* password = "XXXXXXXX
+const char* ssid = "XXXXXX";
+const char* password = "XXXXXXXXXXXX";
 
-const char* host = "192.168.1.106";
+const char* host = "192.168.8.106";
 const int httpPort = 8086;
 
-const char* influxUser = "XXXXX";
+const char* influxUser = "XXXX";
 const char* influxPassword = "XXXXXXXX";
 
 float p10, p25;
@@ -122,7 +122,7 @@ void loop() {
   {
     error = sds.read(&p25, &p10);
 
-    if (!error) {
+    if (!error && p25 < 999 && p10 < 1999) {
       pm25Stats.addValue(p25); 
       pm10Stats.addValue(p10);
     }
